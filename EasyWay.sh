@@ -116,7 +116,7 @@ function runQuestions () {
 function runDriverTEST () {
 		echo "OS testing"
 		if [ -e /etc/manjaro-release ]; then
-		echo "Manjaro OS" ; runDriver
+		echo "Manjaro OS" ; runDriver ; exit 1
 		fi
 		clear
 		echo ""
