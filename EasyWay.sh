@@ -124,13 +124,13 @@ function runDriverTEST () {
 		exit 1
 }
 function runDriverAMD () {
-		sudo pacman -S $MANJAROAMD ; runQuestions
+		sudo pacman -S $MANJAROAMD
 }
 function runDriverINTEL () {
-		sudo pacman -S $MANJAROINTEL ; runQuestions
+		sudo pacman -S $MANJAROINTEL
 }
 function runDriverNVIDIA () {
-		sudo pacman -S $MANJARONVIDIA ; runQuestions
+		sudo pacman -S $MANJARONVIDIA
 }
 function runDriver () {
 		clear
