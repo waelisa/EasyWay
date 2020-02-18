@@ -50,7 +50,7 @@ function RFresh () {
 function ROS () {
 		echo "OS testing"
 		if [ -e /etc/manjaro-release ]; then
-		echo "Manjaro OS" ; RConf
+		echo "Manjaro OS" ; RConf ; exit 1
 		else
 		clear
 		echo ""
@@ -58,7 +58,7 @@ function ROS () {
 		echo "contact me if you want add your system"
 		exit 1
 		if [ -e /etc/solus-release ]; then
-		echo "Solus OS" ; RConf
+		echo "Solus OS" ; RConf ; exit 1
 
 		else
 		clear
