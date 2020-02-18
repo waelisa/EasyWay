@@ -1,7 +1,5 @@
 # EasyWay - Manjaro & Solus only.
 
-I'm lazy and i want everything in easy way.
-
 This script help you to install Lutris, Lutris driver, Steam and backup your home folder
 
 wget https://github.com/waelisa/EasyWay/raw/master/EasyWay.sh
