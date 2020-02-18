@@ -15,16 +15,15 @@
 # Release Date: 18 / 2 / 2020
 #
 ##################################################################
-CONF=$EasyWay.conf
-source $CONF
+source "EasyWay.conf"
 function RConf () {
-		CONF=$EasyWay.conf
+		CONF=EasyWay.conf
 		if [ -f "$CONF" ] && [ ! "$CONF" == "" ]; then
-		source $CONF ; runQuestions
+		runQuestions
 		else
 		wget --no-check-certificate -O https://github.com/waelisa/EasyWay/raw/master/EasyWay.conf
 		echo "EasyWay.conf downloaded."
-		source $CONF ; runQuestions
+		source "$CONF" ; runQuestions
 fi
 }
 function RRsync () {
