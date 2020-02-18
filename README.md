@@ -1,4 +1,4 @@
-# EasyWay
+# EasyWay - Manjaro & Solus only.
 
 I'm lazy and i want everything in easy way.
 
@@ -21,13 +21,6 @@ Then run it :
 ./EasyWay.sh
 
 and do what you want.
-
-
-Manjro forum topic https://forum.manjaro.org/t/easy-way-script/124880
-
-
-Solus forum topic https://discuss.getsol.us/d/3837-easy-way-script
-
 
 [Donate link – PayPal](https://www.paypal.me/WaelIsa)
 
