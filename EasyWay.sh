@@ -130,10 +130,9 @@ function runDriver () {
 		echo "   1) AMD"
 		echo "   2) Intel"	
 		echo "   3) Nvidia"
-		echo "   4) Back"
-		echo "   5) Exit"
-		until [[ "$MENU_OPTION2" =~ ^[1-5]$ ]]; do
-		read -rp "Select an option [1-5]: " MENU_OPTION2
+		echo "   4) Exit"
+		until [[ "$MENU_OPTION2" =~ ^[1-4]$ ]]; do
+		read -rp "Select an option [1-4]: " MENU_OPTION2
 		done
 
 		case $MENU_OPTION2 in
@@ -147,9 +146,6 @@ function runDriver () {
 		runDriverNVIDIA
 		;;
 		4)
-		runQuestions
-		;;
-		5)
 		echo "Exit"
 		exit 0
 		;;
