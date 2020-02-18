@@ -15,8 +15,10 @@
 # Release Date: 18 / 2 / 2020
 #
 ##################################################################
+CONF=$EasyWay.conf
+source $CONF
 function RConf () {
-		CONF=$FolderBackup.conf
+		CONF=$EasyWay.conf
 		if [ -f "$CONF" ] && [ ! "$CONF" == "" ]; then
 		source $CONF ; runQuestions
 		else
@@ -50,15 +52,23 @@ function ROS () {
 		echo "OS testing"
 		if [ -e /etc/manjaro-release ]; then
 		echo "Manjaro OS" ; RConf
-		if [ -e /etc/solus-release ]; then
-		echo "Solus OS" ; RConf
-		fi
-		fi
+		else
 		clear
 		echo ""
 		echo "Linux system not support"
 		echo "contact me if you want add your system"
 		exit 1
+		if [ -e /etc/solus-release ]; then
+		echo "Solus OS" ; RConf
+
+		else
+		clear
+		echo ""
+		echo "Linux system not support"
+		echo "contact me if you want add your system"
+		exit 1
+		fi
+		fi
 }
 function RBackup () {
 		echo "Backup"
@@ -146,6 +156,7 @@ function runDriver () {
 		runDriverNVIDIA
 		;;
 		4)
+
 		echo "Exit"
 		exit 0
 		;;
