@@ -132,11 +132,11 @@ function runDriver () {
 		echo "   3) Nvidia"
 		echo "   4) Back"
 		echo "   5) Exit"
-		until [[ "$MENU_OPTION" =~ ^[1-5]$ ]]; do
-		read -rp "Select an option [1-5]: " MENU_OPTION
+		until [[ "$MENU_OPTION2" =~ ^[1-5]$ ]]; do
+		read -rp "Select an option [1-5]: " MENU_OPTION2
 		done
 
-		case $MENU_OPTION in
+		case $MENU_OPTION2 in
 		1)
 		runDriverAMD
 		;;
@@ -158,4 +158,3 @@ function runDriver () {
 # Runtime
 ROS
 ##################################################################
-
