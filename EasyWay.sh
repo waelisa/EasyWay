@@ -21,7 +21,7 @@ function RConf () {
 		if [ -f "$CONF" ] && [ ! "$CONF" == "" ]; then
 		runQuestions
 		else
-		wget --no-check-certificate -O https://github.com/waelisa/EasyWay/raw/master/EasyWay.conf
+		wget -O https://github.com/waelisa/EasyWay/raw/master/EasyWay.conf
 		echo "EasyWay.conf downloaded."
 		source "$CONF" ; runQuestions
 fi
