@@ -1,8 +1,12 @@
 # EasyWay
-
 Manjaro & Solus only.
 
+# Disclaimer
+Use it at your own risk.
+
 This script help you to install Lutris, Lutris driver, Steam and backup your home folder
+
+# Install
 ```
 wget https://github.com/waelisa/EasyWay/raw/master/EasyWay.sh
 
@@ -21,6 +25,16 @@ Then run it :
 ./EasyWay.sh
 ```
 and do what you want.
+
+## FAQ
+Q. Why is it called EasyWay?
+
+A. It's a joke lol, this script install vulkan, Lutris, Steam,,, etc.
+
+Q. Why frog will die?
+
+A. Maybe. To my knowledge this hasn't happened yet but don't blame me if your frog dies.
+
 
 [Donate link – PayPal](https://www.paypal.me/WaelIsa)
 
