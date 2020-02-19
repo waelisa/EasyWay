@@ -35,6 +35,6 @@ Q. Why frog will die?
 
 A. Maybe. To my knowledge this hasn't happened yet but don't blame me if your frog dies.
 
-
-[Donate link – PayPal](https://www.paypal.me/WaelIsa)
+Q. Can i donate?
+A. [Donate link – PayPal](https://www.paypal.me/WaelIsa)
 
