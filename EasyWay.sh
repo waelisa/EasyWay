@@ -11,8 +11,10 @@
 # Script made by Wael Isa
 # https://github.com/waelisa/EasyWay
 # https://www.wael.name/
+#
 # Version: 1
 # Release Date: 18 / 2 / 2020
+# Udate Date :  20 / 2 / 2020
 #
 ##################################################################
 source "EasyWay.conf"
@@ -51,23 +53,15 @@ function ROS () {
 		echo "OS testing"
 		if [ -e /etc/manjaro-release ]; then
 		echo "Manjaro OS" ; RConf ; exit 1
-		else
-		clear
-		echo ""
-		echo "Linux system not support"
-		echo "contact me if you want add your system"
-		exit 1
 		if [ -e /etc/solus-release ]; then
 		echo "Solus OS" ; RConf ; exit 1
-
-		else
+		fi
+		fi
 		clear
 		echo ""
 		echo "Linux system not support"
 		echo "contact me if you want add your system"
 		exit 1
-		fi
-		fi
 }
 function RBackup () {
 		echo "Backup"
@@ -75,7 +69,7 @@ function RBackup () {
 }
 function RRestore () {
 		echo "Restore"
-		rsync -a --delete --progress -e ssh $BACKUPFOLDER $USERFOLDER
+		rsync -a --delete --progress -e ssh $BACKUPFOLDER /home
 }
 function runQuestions () {
 		clear
@@ -117,6 +111,9 @@ function runDriverTEST () {
 		echo "OS testing"
 		if [ -e /etc/manjaro-release ]; then
 		echo "Manjaro OS" ; runDriver ; exit 1
+		if [ -e /etc/arch-release ]; then
+		echo "Manjaro OS" ; runDriver ; exit 1
+		fi
 		fi
 		clear
 		echo ""
