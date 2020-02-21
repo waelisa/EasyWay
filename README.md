@@ -20,6 +20,8 @@ the script will download conf file EasyWay.conf
 
 edit EasyWay.conf to setup user folder and backup folder only
 
+# Script menu
+
 Then run it :
 ```
 ./EasyWay.sh
